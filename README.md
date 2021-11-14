@@ -21,15 +21,18 @@ Follow the setup instructions for [LIO](https://github.com/011235813/lio). Impor
 - `lio/lio/env/ipd_wrapper.py`: Change `self.l_action` and `self.l_obs` depending on the scenario tested.
 - `lola/lola/envs/prisoners_dilemma.py`: Change `NUM_STATES` depending on the scenario tested. Also set one boolean variable for a scenario on true at the beginning of `def step`.
 
+## Running an implementation of the Iterated Prisoner's Dilemma
+
 - For a single run, `cd` into the `alg` folder of `lio` and execute `$ python train_lio.py ipd`.
 - For five run, `cd` into the `alg` folder of `lio` and execute `$ python train_multiprocess.py lio ipd`.
-
 
 ## Implementations Cleanup
 
 - `lio/lio/alg/config_ipd_lio.py`: Set parameters such as the number of agents, and the size of the environment.
 - `lio/lio/alg/train_ssd.py`: Set one boolean variable for a scenario at the start of `def run_episode` on true.
 - `lio/lio/alg/evaluate.py`: Set one boolean variable for a scenario at the start of `def test_ssd` on true.
+
+## Running an implementation of Cleanup
 
 - For a single run, `cd` into the `alg` folder of `lio` and execute `$ python train_ssd.py`.
 - For five run, `cd` into the `alg` folder of `lio` and execute `$ python train_multiprocess.py lio ssd`.
